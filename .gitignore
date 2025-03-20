@@ -1,0 +1,14 @@
+cache
+data/bili_data
+data/cpt_10b
+data/flores200
+data/mono_data
+data/NTREX
+data/sft_100k
+data/sft_data
+exps
+LLaMA-Factory-0.9.2
+LLaMA-Factory-0.9.2.zip
+
+*.pyc
+__pycache__/
