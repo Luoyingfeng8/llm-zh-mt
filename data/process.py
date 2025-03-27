@@ -210,9 +210,17 @@ def make_sft_train_data():
 
 if __name__ == "__main__":
     # merge_valid()
-    make_train_data()
-    make_valid_data()
-    ## sft
+    # make_train_data()
+    # make_valid_data()
+    # ## sft
     # make_test_data()
     # make_sft_valid_data()
     # make_sft_train_data()
+    for i,line in enumerate(open("/mnt/luoyingfeng/llm_evaluation/data/alexandrainst/m_hellaswag/data/zh/val.jsonl")):
+        try:
+            ele = json.loads(line)
+            for item in ele["endings"]:
+                if type(item) is not str:
+                    print(i, ele)
+        except:
+            print(i, line)
